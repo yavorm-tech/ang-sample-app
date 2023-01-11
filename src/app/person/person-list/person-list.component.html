@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-xs-10 " *ngFor="let person of persons">
+      <div *ngIf="person.foreign" class="" style="background: red" >
+        <hr />
+        <div>{{person.fname}}</div>
+        <div>{{person.lname}}</div>
+        <div>{{person.egn}}</div>
+        <div>{{person.egn}}</div>
+      </div>
+      <div *ngIf="!person.foreign" class="" style="" >
+        <hr />
+        <div>{{person.fname}}</div>
+        <div>{{person.lname}}</div>
+        <div>{{person.egn}}</div>
+        <div>{{person.egn}}</div>
+      </div>
+  </div>
+  <app-person-edit></app-person-edit>
+</div>
